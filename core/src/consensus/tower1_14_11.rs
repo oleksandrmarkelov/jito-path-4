@@ -36,4 +36,14 @@ pub struct Tower1_14_11 {
     pub(crate) stray_restored_slot: Option<Slot>,
     #[serde(skip)]
     pub(crate) last_switch_threshold_check: Option<(Slot, SwitchForkDecision)>,
+    #[serde(skip)]
+    pub(crate) mostly_confirmed_threshold: Option<f64>,
+    #[serde(skip)]
+    pub(crate) threshold_ahead_count: Option<u8>,
+    #[serde(skip)]
+    pub(crate) after_skip_threshold: Option<u8>,
+    #[serde(skip)]
+    pub(crate) threshold_escape_count: Option<u8>,
+    #[serde(skip)]
+    pub(crate) last_config_check_seconds: u64,
 }
